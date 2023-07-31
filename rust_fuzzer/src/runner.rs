@@ -214,6 +214,7 @@ impl FuzzRunner for NyxProcess {
         self.bitmap_buffer_size()
     }
 
+    #[allow(unaligned_references)] 
     fn ijon_max_buffer(&self) -> &[u64]{
         let feedback_buffer = ijon_buffer(self);
         &feedback_buffer.ijon.max_data

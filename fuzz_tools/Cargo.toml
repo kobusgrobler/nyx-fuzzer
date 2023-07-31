@@ -1,0 +1,10 @@
+[package]
+name = "fuzz_tools"
+version = "0.1.0"
+authors = ["kobus <kobus.grobler@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structured_fuzzer={path="../structured_fuzzer"}
+hex="0.4.2"
+clap="2.33.0"
